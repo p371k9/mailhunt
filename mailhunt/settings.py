@@ -14,9 +14,9 @@ BOT_NAME = 'mailhunt'
 SPIDER_MODULES = ['mailhunt.spiders']
 NEWSPIDER_MODULE = 'mailhunt.spiders'
 
-RLS = ["contact", "about", "carreer"
-    , "kontakt", "willkommen", "einfuhrung", "uber-uns", "impressum" # de
+RLS = ["contact", "about", "carreer"  # en  
     , "kapcsolat", "koszonto", "bemutatkozas", "rolunk", "impresszum", "kezdolap", "elerhetosegunk", "elerhetosegeink" # hu
+    , 'kontakt', 'willkommen', 'einfuhrung', 'uber-uns', 'impressum' # de
 ]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -26,12 +26,12 @@ USER_AGENT = 'curl/7.35.0'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 1
+#CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
-# See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+# See also autothrottle settings and docs  
+#DOWNLOAD_DELAY = 2
 # The download delay setting will honor only one of:
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 #CONCURRENT_REQUESTS_PER_IP = 1
