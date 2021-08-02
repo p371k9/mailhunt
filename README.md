@@ -12,7 +12,7 @@ If on multiple sites:
 ```
 scrapy crawl hunter -a list=path/to/list.de -o de.csv
 ```
-Where **lisd.de** is a list file containing URLs. Example list file:
+Where **list.de** is a list file containing URLs. Example list file:
 ```
 https://bieler-lang.de/
 http://www.hotelbenczur.hu
