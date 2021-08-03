@@ -12,7 +12,6 @@ If on multiple sites:
 ```
 scrapy crawl hunter -a list=path/to/list.lll -o list.csv
 ```
-<<<<<<< HEAD
 Where **list.lll** is a list file containing URLs. Example list file:
 =======
 Where **list.de** is a list file containing URLs. Example list file:
