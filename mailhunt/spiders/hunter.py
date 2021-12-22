@@ -21,13 +21,10 @@ class MSpider(scrapy.Spider):
                 content = f.readlines()
             content = [x.strip() for x in content]
             self.start_urls = content
-            
-    def make_requests_from_url(self, url):
-        """A method that receives a URL and returns a Request object (or a list of Request objects) to scrape. 
-        This method is used to construct the initial requests in the start_requests() method, 
-        and is typically used to convert urls to requests.
-        """
-        return Request(url, dont_filter=True, meta = {'start_url': url})
+
+    def start_requests(self):
+        for url in self.start_urls:
+            yield Request(url, dont_filter=True, meta = {'start_url': url})
 
     def parse(self, response):
         def search_in_pg():

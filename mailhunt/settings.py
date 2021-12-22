@@ -15,7 +15,7 @@ SPIDER_MODULES = ['mailhunt.spiders']
 NEWSPIDER_MODULE = 'mailhunt.spiders'
 
 RLS = ["contact", "about", "carreer"  # en  
-    , "kapcsolat", "koszonto", "bemutatkozas", "rolunk", "impresszum", "kezdolap", "elerhetosegunk", "elerhetosegeink" # hu
+    , "kapcsolat", "koszonto", "bemutatkozas", "rolunk", "impresszum", "kezdolap", "elerhetoseg" # hu
     , 'kontakt', 'willkommen', 'einfuhrung', 'uber-uns', 'impressum' # de
 ]
 

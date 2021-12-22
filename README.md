@@ -10,13 +10,7 @@ scrapy crawl hunter -a url=https://bieler-lang.de/
 
 If on multiple sites:
 ```
-scrapy crawl hunter -a list=path/to/list.lll -o list.csv
-```
-Where **list.lll** is a list file containing URLs. Example list file:
-```
-http://www.hotelbenczur.hu
-https://bieler-lang.de/
-https://www.thetravelshopabingdon.com
+scrapy crawl hunter -a list=teszt/urls.lll -o list.csv
 ```
 
 The script only searches web pages that match the strings specified in the **settings.py** **RLS** variable. But the **RLS** list can be changed from the command line just like any Scrapy global. E.g.: 
