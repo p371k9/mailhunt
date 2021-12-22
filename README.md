@@ -13,6 +13,8 @@ If on multiple sites:
 scrapy crawl hunter -a list=teszt/urls.lll -o list.csv
 ```
 
+Where .lll is a list file - in other words a single-column headless .csv.
+
 The script only searches web pages that match the strings specified in the **settings.py** **RLS** variable. But the **RLS** list can be changed from the command line just like any Scrapy global. E.g.: 
 ```
 scrapy crawl hunter -a url=https://bieler-lang.de/ -s RLS="['contact', 'about', 'kontakt', 'über']"
