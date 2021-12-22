@@ -22,3 +22,5 @@ or:
 scrapy crawl hunter -a list=path/to/list.de -s RLS="['contact', 'about', 'kontakt', 'über']" -o de.csv
 ```
 
+Tested with Scrapy 2.5.1
+
